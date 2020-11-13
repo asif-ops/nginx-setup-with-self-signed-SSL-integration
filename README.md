@@ -7,3 +7,10 @@
 5. Soft link between sites-available/config file   with sites-enable/ directory
 6. Verify NGINX connection
 7. Finally browse website and check whether it works or not 
+
+## Implementation:
+1. Update repo and install Nginx 
+sudo apt-get update && apt-get install nginx -y
+sudo /etc/init.d/nginx start
+[ ok ] Starting nginx (via systemctl): nginx.service.
+sudo /etc/init.d/nginx status

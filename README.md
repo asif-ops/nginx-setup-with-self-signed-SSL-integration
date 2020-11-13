@@ -86,4 +86,4 @@ Uncomment below lines and add line “include snippets/self-signed.conf;”  her
 	 listen [::]:443 ssl default_server;
  	include snippets/self-signed.conf;
 
-![](picture1.png)
+![title](picture1.png)

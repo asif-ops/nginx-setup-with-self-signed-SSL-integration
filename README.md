@@ -10,11 +10,13 @@
 
 ## Implementation:
 1. Update repo and install Nginx<br/> 
-sudo apt-get update && apt-get install nginx -y<br/> 
-sudo /etc/init.d/nginx start<br/>
-[ ok ] Starting nginx (via systemctl): nginx.service.<br/>  
-sudo /etc/init.d/nginx status<br/>
-2. create openssl self sign private key and self signed certificate 
+```
+sudo apt-get update && apt-get install nginx -y
+sudo /etc/init.d/nginx start
+[ ok ] Starting nginx (via systemctl): nginx.service.
+sudo /etc/init.d/nginx status
+```
+2. create openssl self sign private key and self signed certificate <br \>
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt<br \>
 Generating a RSA private key<br \>
 ........................................................+++++<br \>

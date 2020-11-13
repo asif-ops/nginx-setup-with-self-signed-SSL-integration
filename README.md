@@ -19,6 +19,10 @@ sudo /etc/init.d/nginx status
 2. create openssl self sign private key and self signed certificate
 ```
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+```
+output and parameters input
+
+```
 Generating a RSA private key
 ........................................................+++++
 ..+++++

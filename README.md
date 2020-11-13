@@ -1,4 +1,4 @@
-# Install NGINX with self signed SSL certificate integration at Ubuntu 18.04
+# Install NGINX with self signed SSL certificate on Ubuntu 18.04
 ##steps below :
 1. Update repo and install Nginx 
 2. create openssl self sign private key and self signed certificate 

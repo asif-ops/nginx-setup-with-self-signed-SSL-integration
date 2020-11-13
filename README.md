@@ -104,13 +104,9 @@ sudo ln -s /etc/nginx/sites-available/default  /etc/nginx/sites-enable/
 ```
 6. Put website content at /var/www/html directory 
 Here I will clone a git repository and put website files (index.html and other css files) at /var/www/html directory as sowing below :
-
 ![title](picture3.png)
-
 Now site website index,html file is ready 
-
 ![title](picture4.png)
-
 7. Verify NGINX connection
 `sudo nginx -t`
 ```
@@ -120,9 +116,7 @@ restart nginx service
 sudo /etc/init.d/nginx restart
 [ ok ] Restarting nginx (via systemctl): nginx.service.
 ```
-
 8. Browse website and check whether SSL work or not 
 Now browse the website weith https and we can see the content of the website as showing below with SSL certification enabled. As this self sign certificate so website showing not secure option when connection , showing below picture 
-
 ![title](picture5.png)
 

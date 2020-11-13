@@ -9,7 +9,7 @@
 7. Finally browse website and check whether it works or not 
 
 ## Implementation:
-1. [Update repo and install Nginx] [1] 
+1. [Update repo and install Nginx][1] 
 ```
 sudo apt-get update && apt-get install nginx -y
 sudo /etc/init.d/nginx start

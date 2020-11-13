@@ -45,4 +45,33 @@ Email Address []:
 ```
 
 both of the private key and certificate files created under /etc/ssl directory 
+```
+ls -lrt /etc/ssl/
+total 32
+-rw-r--r-- 1 root root 10998 May 27 19:15 openssl.cnf
+drwx------ 2 root root  4096 Nov  3 07:21 private
+drwxr-xr-x 2 root root 16384 Nov  3 07:22 certs
+```
 
+3. Create a Configuration Snippet Pointing to the SSL Key and Certificate
+```
+sudo nano /etc/nginx/snippets/self-signed.conf
+ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+save and exit 
+```
+
+4. Configure Nginx config file for SSL integration & website directory
+
+N.B:   /etc/nginx/sites-available directory should contain all the static files for ur website
+/etc/nginx/sites-enable directory will link with /etc/nginx/sites-available. 
+/etc/nginx/sites-enable directory file will read by NGINX to load the configuration
+
+First, backup of current config file 
+```
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+```
+second, config the default config file
+```
+sudo nano /etc/nginx/sites-available/default
+```

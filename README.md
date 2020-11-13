@@ -87,3 +87,9 @@ Uncomment below lines and add line “include snippets/self-signed.conf;”  her
  	include snippets/self-signed.conf;
 
 ![title](picture1.png)
+
+Then keep 
+**index  index.html**
+ besides give server name as customized name as per requirement , this name not necessary to be a FQDN . keep other parts default. 
+Steps is showing following picture:   
+

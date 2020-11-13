@@ -75,3 +75,15 @@ second, config the default config file
 ```
 sudo nano /etc/nginx/sites-available/default
 ```
+comment out below lines
+
+	#listen 80 default_server;
+	#listen [::]:80 default_server;
+
+Uncomment below lines and add line “include snippets/self-signed.conf;”  here /etc/nginx/snippets/self-signed.conf  is configuration snipset pointing to ssl private key and certificates . steps is following :
+
+	listen 443 ssl default_server;
+	 listen [::]:443 ssl default_server;
+ 	include snippets/self-signed.conf;
+
+ ![](D:\Dev\nginx\picture1.png)
